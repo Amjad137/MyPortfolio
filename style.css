@@ -8,7 +8,7 @@
 .HeroSection{
     display: flex;
     /* flex-wrap: wrap; */
-    min-height: 60vh;
+    min-height: 80vh;
     /* width: 100%; */
     color: black;
     flex-direction: column;
@@ -72,12 +72,12 @@
     gap: 20px;
     /* flex-wrap: wrap; */
     margin: 20px;
-    margin-left: 10%;
+    margin-left: 20%;
     position: absolute; 
     padding: 20px;
     z-index: 2;
     /* after putting z-index only the container is shown */
-    height: calc(60vh - 40px);
+    height: calc(60vh - 30px);
 
 }
 
@@ -90,12 +90,15 @@
 .HeroPrflContainer .ImageContainer img{
     width: 100%;
     max-width: 300px;
+    max-height: 300px;
     height: auto;
-    border-radius: 10px 40% 10px 60%;
+    /* border-radius: 10px 40% 10px 60%; */
+    border-radius: 10px;
     object-fit: cover;
     object-position: center;
     /* border-radius: 10% 60%; */
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    ;
     
 }
 
@@ -103,7 +106,7 @@
     font-size: 15px;
     line-height: 5px;
     color: black;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .PrflText span:nth-child(2){
@@ -217,6 +220,14 @@ z-index: 2; /*if this is not given,the a tag is merged with the background*/
     font-weight: 400;
 }
 
+@media only screen and (max-width: 1400px) {
+    .HeroPrflContainer .ImageContainer img{
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+}
 @media only screen and (max-width: 1000px) {
     
    
